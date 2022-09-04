@@ -50,7 +50,7 @@
 			}
 		},
 		mounted() {
-			axios.get('http://127.0.0.1:8080/00.API/vuebackend/backend_api.php').then((res)=> {
+			axios.get('http://127.0.0.1:8080/00.API/vuebackend/index.php').then((res)=> {
 				this.allUsers=res.data
 				console.log(res.data)
 			})
