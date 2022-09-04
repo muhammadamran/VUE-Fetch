@@ -10,18 +10,24 @@
         <tr>
           <!-- <th>#</th> -->
           <th>Username</th>
-          <th>Password</th>
+          <!-- <th>Password</th> -->
           <th>First Name</th>
           <th>Last Name</th>
           <th>Gender</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Expired Date</th>
         </tr>
         <tbody>
           <tr v-for="users in allUsers" v-bind:key="users.id">
             <td>{{users.username}}</td>
-            <td>{{users.password}}</td>
+            <!-- <td>{{users.password}}</td> -->
             <td>{{users.fname}}</td>
             <td>{{users.lname}}</td>
             <td>{{users.gender}}</td>
+            <td>{{users.email}}</td>
+            <td>{{users.role}}</td>
+            <td>{{users.expired_date}}</td>
           </tr>
         </tbody>
       </table>
